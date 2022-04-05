@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Text to Speech Generator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="chat-bubble.png">
+  </head>
+  <body>
+    <h1>Text to Speech Generator</h1>
+    <div class="">
+      <p>Select voice</p>
+      <select class="" name="" id="voices"></select>
+    </div>
+    <div style="margin-left: 250px;">
+      <p>Volume</p>
+      <input class="volume sliders" type="range" name="volume" value="1" min="0" max="1" step="0.1">
+    </div>
+    <div>
+      <p>Rate</p>
+      <input class="rate sliders" type="range" name="rate" value="2" min="0" max="10" step="1">
+    </div>
+    <div>
+      <p>Pitch</p>
+      <input class="pitch sliders" type="range" name="pitch" value="1" min="0" max="1" step="0.1">
+    </div>
+    <br>
+    <br>
+    <p>Write your text below</p>
+    <textarea name="textbox" rows="18" cols="180">Write something...</textarea>
+    <br>
+    <br>
+    <div class="buttons">
+      <button type="button" name="play" id="play" class="btn">Play</button>
+      <button type="button" name="resume" id="resume" class="btn">Resume</button>
+      <button type="button" name="pause" id="pause" class="btn">Pause</button>
+      <button type="button" name="stop" id="stop" class="btn">Stop</button>
+    </div>
+    <p id="copyright">©Jitender Singh</p>
+
+    <script src="index.js" charset="utf-8"></script>
+  </body>
+</html>
